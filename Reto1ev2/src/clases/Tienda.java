@@ -9,21 +9,21 @@ public class Tienda {
 	 * Cada tienda tendrá un identificador único, un nombre, un empleado que será el
 	 * gerente y una lista de productos que tiene a la venta.
 	 * 
-	 *  Los productos los
-	 * podremos reponer y vender. Los productos tendrán un identificador y un
-	 * nombre, ambos únicos, y un precio que estará entre 10 y 100 euros. Los
-	 * productos se van a generar siempre con datos aleatorios.
+	 * Los productos los podremos reponer y vender. Los productos tendrán un
+	 * identificador y un nombre, ambos únicos, y un precio que estará entre 10 y
+	 * 100 euros. Los productos se van a generar siempre con datos aleatorios.
 	 */
 
 	private int idTienda;
-	private String nombreTienda, empleado;
+	private String nombreTienda; 
+	private Empleados empleado;
 	private ArrayList<Producto> listaProductos;
 
 	public Tienda() {
 		super();
 	}
 
-	public Tienda(int idTienda, String nombreTienda, String empleado, ArrayList<Producto> listaProductos) {
+	public Tienda(int idTienda, String nombreTienda, Empleados empleado, ArrayList<Producto> listaProductos) {
 		super();
 		this.idTienda = idTienda;
 		this.nombreTienda = nombreTienda;
@@ -68,28 +68,23 @@ public class Tienda {
 		return " [idTienda=" + idTienda + ", nombreTienda=" + nombreTienda + ", empleado=" + empleado
 				+ ", listaProductos=" + listaProductos + "]";
 	}
-	
-	
-	public void eliminiarProducto (ArrayList<Producto> productos) {
-	
-		ArrayList <Producto> productoDisponible = new ArrayList<>();
-		
-for (int i = 0; i < productoDisponible.size(); i++) {
-	
-	
-	if(i == productoDisponible.size()) {
-		
-		
-		productos.remove(i);
-		
-		
-	}
-	
-}	
-} 
-	
-}	
-	
-	
-	
 
+	public void eliminiarProducto(Producto productoo) {
+
+		// ArrayList<Producto> listaProductos;
+
+		for (Producto producto : listaProductos) {
+
+			listaProductos.remove(producto);
+
+		}
+
+	}
+
+	public void addProducto(Producto productoo) {
+
+		listaProductos.add(productoo);jhj
+
+	}
+
+}

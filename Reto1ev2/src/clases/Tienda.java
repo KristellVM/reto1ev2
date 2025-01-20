@@ -17,13 +17,13 @@ public class Tienda {
 
 	private int idTienda;
 	private String nombreTienda, empleado;
-	private ArrayList<String> listaProductos;
+	private ArrayList<Producto> listaProductos;
 
 	public Tienda() {
 		super();
 	}
 
-	public Tienda(int idTienda, String nombreTienda, String empleado, ArrayList<String> listaProductos) {
+	public Tienda(int idTienda, String nombreTienda, String empleado, ArrayList<Producto> listaProductos) {
 		super();
 		this.idTienda = idTienda;
 		this.nombreTienda = nombreTienda;
@@ -55,11 +55,11 @@ public class Tienda {
 		this.empleado = empleado;
 	}
 
-	public ArrayList<String> getListaProductos() {
+	public ArrayList<Producto> getListaProductos() {
 		return listaProductos;
 	}
 
-	public void setListaProductos(ArrayList<String> listaProductos) {
+	public void setListaProductos(ArrayList<Producto> listaProductos) {
 		this.listaProductos = listaProductos;
 	}
 
@@ -68,11 +68,6 @@ public class Tienda {
 		return " [idTienda=" + idTienda + ", nombreTienda=" + nombreTienda + ", empleado=" + empleado
 				+ ", listaProductos=" + listaProductos + "]";
 	}
-	
-	
-	
-	
-	
 	
 	
 	public void eliminiarProducto (ArrayList<Producto> productos) {
@@ -90,18 +85,11 @@ for (int i = 0; i < productoDisponible.size(); i++) {
 		
 	}
 	
-	
+}	
 } 
 	
+}	
 	
 	
 	
-	
-}
-	
-	
-}
 
-}
-
-}

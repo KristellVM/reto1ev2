@@ -16,12 +16,21 @@ public class Tienda {
 	 */
 
 	private int idTienda;
-	private String nombreTienda, empleado;
+	private String nombreTienda;
+	private Empleados empleado;
 	private ArrayList<String> listaProductos;
 
 	public Tienda() {
 		super();
 	}
+	
+	public Tienda(int idTienda, String nombreTienda, Empleados empleado) {
+		super();
+		this.idTienda = idTienda;
+		this.nombreTienda = nombreTienda;
+		this.empleado = empleado;
+	}
+	
 
 	public Tienda(int idTienda, String nombreTienda, String empleado, ArrayList<String> listaProductos) {
 		super();
@@ -98,10 +107,16 @@ for (int i = 0; i < productoDisponible.size(); i++) {
 	
 	
 }
+
+
+
+
+	
+
 	
 	
-}
+
 
 }
 
-}
+

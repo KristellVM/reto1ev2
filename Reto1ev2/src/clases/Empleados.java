@@ -24,12 +24,15 @@ public class Empleados {
 	public Empleados() {
 		super();
 	}
+	
+	
 
 	// constructor lleno
 	public Empleados(String nombre, int antiguedad) {// no pasar sueldo
 		super();
 		this.nombre = nombre;
 		this.antiguedad = antiguedad;
+		
 		calculaSueldo();//calculo el sueldo
 		//si mi metodo calcular sueldo  fuera double, tendria q haber puesto--> this.sueldo
 
@@ -59,17 +62,27 @@ public class Empleados {
 	public void setSueldo(double sueldo) {
 		this.sueldo = sueldo;
 	}
+	
+	
+	
+
+	@Override
+	public String toString() {
+		return " [nombre=" + nombre + ", antiguedad=" + antiguedad + ", sueldo=" + sueldo + "]";
+	}
+
+
 
 	// metodo calcular sueldo
 	public void calculaSueldo() {// como es void*
-		double suedo = 0;
+		
 		if (antiguedad < 5) {
-			suedo = 1000;
+			sueldo = 1000;
 		}
 		else if (antiguedad > 6 && antiguedad < 10) {
-			suedo = 1200;
+			sueldo = 1200;
 		} else if (antiguedad > 10) {
-			suedo = 1500;
+			sueldo = 1500;
 		}
 	}
 	

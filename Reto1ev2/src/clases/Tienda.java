@@ -16,12 +16,26 @@ public class Tienda {
 	 */
 
 	private int idTienda;
+<<<<<<< HEAD
 	private String nombreTienda, empleado;
 	private ArrayList<Producto> listaProductos;
+=======
+	private String nombreTienda;
+	private Empleados empleado;
+	private ArrayList<String> listaProductos;
+>>>>>>> branch 'main' of https://github.com/KristellVM/reto1ev2.git
 
 	public Tienda() {
 		super();
 	}
+	
+	public Tienda(int idTienda, String nombreTienda, Empleados empleado) {
+		super();
+		this.idTienda = idTienda;
+		this.nombreTienda = nombreTienda;
+		this.empleado = empleado;
+	}
+	
 
 	public Tienda(int idTienda, String nombreTienda, String empleado, ArrayList<Producto> listaProductos) {
 		super();
@@ -92,4 +106,24 @@ for (int i = 0; i < productoDisponible.size(); i++) {
 	
 	
 	
+<<<<<<< HEAD
+=======
+	
+}
 
+
+
+
+	
+
+	
+	
+
+>>>>>>> branch 'main' of https://github.com/KristellVM/reto1ev2.git
+
+<<<<<<< HEAD
+=======
+}
+
+
+>>>>>>> branch 'main' of https://github.com/KristellVM/reto1ev2.git

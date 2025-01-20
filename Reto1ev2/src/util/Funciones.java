@@ -58,15 +58,15 @@ public class Funciones {
 	}
 	
 	public static void mostrarListaFecha(List<LocalDate> lista) {
-		DateTimeFormatter horaEspaña = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+		DateTimeFormatter horaEspana = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 		boolean primero = true;
 		for (int i = 0; i < lista.size(); i++) {
 			if(primero) {
-				System.out.print(lista.get(i).format(horaEspaña));
+				System.out.print(lista.get(i).format(horaEspana));
 			primero = false;
 			}
 			else {
-				System.out.print(", "+lista.get(i).format(horaEspaña));
+				System.out.print(", "+lista.get(i).format(horaEspana));
 			}
 		}
 		System.out.println();
@@ -88,16 +88,16 @@ public class Funciones {
 	
 	
 	public static LocalDate dimeFecha(String texto,Scanner sc) {
-		DateTimeFormatter horaEspaña = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+		DateTimeFormatter horaEspana = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 		do {
 			try{
 				System.out.println(texto);
 				String fecha = sc.nextLine();
-				LocalDate ldt= LocalDate.parse(fecha, horaEspaña);
+				LocalDate ldt= LocalDate.parse(fecha, horaEspana);
 				return ldt;
 			}
 			catch(Exception ex) {
-				System.out.println("Fecha no válida");
+				System.out.println("Fecha no vï¿½lida");
 			}
 			
 		}while(true);

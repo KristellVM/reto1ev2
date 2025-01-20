@@ -26,6 +26,7 @@ public class Cliente {
 		double gasto = 0;
 		for (Producto producto : compras) {
 			gasto = gasto + producto.getPrecio();
+			
 		}
 	}
 }

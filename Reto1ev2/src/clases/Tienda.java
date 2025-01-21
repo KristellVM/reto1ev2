@@ -15,22 +15,21 @@ public class Tienda {
 	 */
 
 	private int idTienda;
-	private String nombreTienda; 
+	private String nombreTienda;
 	private Empleados empleado;
 	private ArrayList<Producto> listaProductos;
 
 	public Tienda() {
-	
+		this.listaProductos = new ArrayList<Producto>();
 	}
 
-	public Tienda(int idTienda, String nombreTienda, Empleados empleado, ArrayList<Producto> listaProductos) {
+	public Tienda(int idTienda, String nombreTienda, Empleados empleado) {
 		super();
 		this.idTienda = idTienda;
 		this.nombreTienda = nombreTienda;
 		this.empleado = empleado;
-		this.listaProductos = listaProductos;
-		
-		
+		this.listaProductos = new ArrayList<Producto>();
+
 	}
 
 	public int getIdTienda() {
@@ -71,13 +70,18 @@ public class Tienda {
 				+ ", listaProductos=" + listaProductos + "]";
 	}
 
+	
+	
+	
+	
+	
+	
+	
 	public void eliminiarProducto(Producto producto) {
 
-		// ArrayList<Producto> listaProductos;
-
-			listaProductos.remove(producto);
-
 	
+
+		listaProductos.remove(producto);
 
 	}
 
@@ -86,21 +90,25 @@ public class Tienda {
 		listaProductos.add(producto);
 
 	}
-	
-	public void reponerProducto (Producto producto) {
-		
-		if ( listaProductos.size() <5) {
-		for (int i = 0; i < 5; i++) {
-			listaProductos.add(producto);
-		}	
-			
+
+	public void reponerProducto(Producto producto) {
+
+		if (listaProductos.size() < 5) {
+			for (int i = 0; i < 5; i++) {
+				listaProductos.add(producto);
+			}
+
 		}
-		
+
 	}
-      
-	
-	
-	
-	
-	
+
+	/*
+	 * Al reponer productos le indicaremos cuántos productos queremos añadir a la
+	 * lista de productos de esa tienda, se generarán nuevos productos que se
+	 * añadirán a la lista de productos de esa tienda. Los productos también se van
+	 * a vender y cuando se venda un producto se borrará de la lista de productos de
+	 * esa tienda. Además, si al vender la tienda se queda con menos de 5 productos,
+	 * repondrá 5 más automáticamente.
+	 */
+
 }

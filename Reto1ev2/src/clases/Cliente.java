@@ -34,6 +34,7 @@ public class Cliente {
 		compras.putIfAbsent(tienda, new ArrayList<Producto>());
 		compras.get(tienda).add(producto);
 	}
+	
 	public double gastoTotal() {
 		double gasto = 0;
 		

@@ -67,7 +67,10 @@ public class reto {
 		}
 		return listaTiendas;
 	}
-	//1 cliente con datos aleatorios
-	Cliente cliente=new Cliente("Ana");
 	
+	public static Cliente generaCliente() {
+//1 cliente con datos aleatorios
+	Cliente cliente=new Cliente("Ana");
+	return cliente;
+	}
 }

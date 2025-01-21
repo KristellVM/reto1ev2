@@ -32,7 +32,7 @@ public class Tienda {
 	}
 	
 
-	public Tienda(int idTienda, String nombreTienda, String empleado, ArrayList<String> listaProductos) {
+	public Tienda(int idTienda, String nombreTienda, Empleados empleado, ArrayList<String> listaProductos) {
 		super();
 		this.idTienda = idTienda;
 		this.nombreTienda = nombreTienda;
@@ -56,11 +56,11 @@ public class Tienda {
 		this.nombreTienda = nombreTienda;
 	}
 
-	public String getEmpleado() {
+	public Empleados getEmpleado() {
 		return empleado;
 	}
 
-	public void setEmpleado(String empleado) {
+	public void setEmpleado(Empleados empleado) {
 		this.empleado = empleado;
 	}
 

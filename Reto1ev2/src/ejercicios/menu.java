@@ -15,11 +15,12 @@ public class menu {
 		int opcion = 0;
 		List<Empleados> listaEmpleados = reto.generaEmpleados();
 		List<Tienda> listaTiendas =  reto.generaTienda(listaEmpleados);
+		
 		do {
 			opcion = Funciones.dimeEntero("Introduce opci�n\n1.Ver tiendas\n2.Comprar\n3.Mostrar compras\n4.Realizar una queja\n5.Salir", sc);
 			switch (opcion) {
 			case 1:
-				FuncionesK.mostrarTiendas(null);
+				FuncionesK.mostrarTiendas(listaTiendas);
 				break;
 			case 2:
 				

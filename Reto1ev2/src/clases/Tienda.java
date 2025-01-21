@@ -20,7 +20,7 @@ public class Tienda {
 	private ArrayList<Producto> listaProductos;
 
 	public Tienda() {
-		super();
+	
 	}
 
 	public Tienda(int idTienda, String nombreTienda, Empleados empleado, ArrayList<Producto> listaProductos) {
@@ -29,6 +29,8 @@ public class Tienda {
 		this.nombreTienda = nombreTienda;
 		this.empleado = empleado;
 		this.listaProductos = listaProductos;
+		
+		
 	}
 
 	public int getIdTienda() {
@@ -69,22 +71,34 @@ public class Tienda {
 				+ ", listaProductos=" + listaProductos + "]";
 	}
 
-	public void eliminiarProducto(Producto productoo) {
+	public void eliminiarProducto(Producto producto) {
 
 		// ArrayList<Producto> listaProductos;
 
-		for (Producto producto : listaProductos) {
-
 			listaProductos.remove(producto);
 
+	
+
+	}
+
+	public void addProducto(Producto producto) {
+
+		listaProductos.add(producto);
+
+	}
+	
+	public void reponerProducto (Producto producto) {
+		
+		if ( listaProductos.size() <5) {
+			
+			listaProductos.add(producto);
 		}
-
+		
 	}
-
-	public void addProducto(Producto productoo) {
-
-		listaProductos.add(productoo);
-
-	}
-
+      
+	
+	
+	
+	
+	
 }

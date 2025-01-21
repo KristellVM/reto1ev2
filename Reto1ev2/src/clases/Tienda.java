@@ -37,7 +37,11 @@ public class Tienda {
 	}
 	
 
+<<<<<<< HEAD
 	public Tienda(int idTienda, String nombreTienda, String empleado, ArrayList<Producto> listaProductos) {
+=======
+	public Tienda(int idTienda, String nombreTienda, Empleados empleado, ArrayList<String> listaProductos) {
+>>>>>>> branch 'main' of https://github.com/KristellVM/reto1ev2.git
 		super();
 		this.idTienda = idTienda;
 		this.nombreTienda = nombreTienda;
@@ -61,11 +65,11 @@ public class Tienda {
 		this.nombreTienda = nombreTienda;
 	}
 
-	public String getEmpleado() {
+	public Empleados getEmpleado() {
 		return empleado;
 	}
 
-	public void setEmpleado(String empleado) {
+	public void setEmpleado(Empleados empleado) {
 		this.empleado = empleado;
 	}
 

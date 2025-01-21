@@ -48,7 +48,7 @@ public class reto {
 		Random r = new Random();
 		for (int i = 1; i < 6; i++) {
 			// crear 5empleados
-			Tienda t = new Tienda(r.nextInt(1, 20),"tienda" + i,Empleado.get(r.nextInt(1,21)));//int idTienda, String nombreTienda, String empleado, ArrayList<String> listaProductos
+			Tienda t = new Tienda(i,"tienda" + i, Empleado.get(i));//int idTienda, String nombreTienda, String empleado, ArrayList<String> listaProductos
 			// añado a  lista
 			listaTiendas.add(t);
 		}

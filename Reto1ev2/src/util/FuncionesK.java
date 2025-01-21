@@ -9,5 +9,6 @@ public class FuncionesK {
 		for (Tienda tienda : tiendas) {
 			System.out.println(tienda.getIdTienda()+" - "+tienda.getNombreTienda()+", Gerente: "+tienda.getEmpleado().getNombre()+ ", productos en venta: "+tienda.getListaProductos().size());
 		}
+	
 	}
 }

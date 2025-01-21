@@ -27,7 +27,7 @@ public class reto {
 			
 			
 			System.out.println(listaEmpleados);
-			List<Tienda> listaTiendas = generaTienda(listaEmpleados);
+			List<Tienda> listaTiendas = generaTienda();
 		System.out.println(listaTiendas);
 	}
 	//lista de empleados
@@ -48,11 +48,13 @@ public class reto {
 		Random r = new Random();
 		for (int i = 1; i < 6; i++) {
 			// crear 5empleados
-			Tienda t = new Tienda(i,"tienda" + i, Empleado.get(i));//int idTienda, String nombreTienda, String empleado, ArrayList<String> listaProductos
+			Tienda t = new Tienda(i,"tienda" + i, Empleado.get(r.nextInt(1,21)));//int idTienda, String nombreTienda, String empleado, ArrayList<String> listaProductos
 			// añado a  lista
 			listaTiendas.add(t);
 		}
 		return listaTiendas;
 	}
+	//1 cliente con datos aleatorios
+	Cliente clien
 	
 }

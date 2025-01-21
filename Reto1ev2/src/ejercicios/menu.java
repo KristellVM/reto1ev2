@@ -6,13 +6,14 @@ import java.util.Scanner;
 import clases.Empleados;
 import clases.Tienda;
 import util.Funciones;
+import util.FuncionesA;
 import util.FuncionesK;
 
 public class menu {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		int opcion = 0;
+		int opcion = 0, numId = 0;
 		List<Empleados> listaEmpleados = reto.generaEmpleados();
 		List<Tienda> listaTiendas =  reto.generaTienda(listaEmpleados);
 		
@@ -23,13 +24,13 @@ public class menu {
 				FuncionesK.mostrarTiendas(listaTiendas);
 				break;
 			case 2:
-				
+				Tienda tienda2 = FuncionesA.eligeTienda(listaTiendas, numId);
 				break;
 			case 3:
 				
 				break;
 			case 4:
-				
+				Tienda tienda4 = FuncionesA.eligeTienda(listaTiendas, numId);
 				break;
 			case 5:
 					

@@ -22,8 +22,13 @@ public class Tienda {
 	public Tienda() {
 		this.listaProductos = new ArrayList<Producto>();
 	}
+	
+
+
+
 
 	public Tienda(int idTienda, String nombreTienda, Empleados empleado) {
+
 		super();
 		this.idTienda = idTienda;
 		this.nombreTienda = nombreTienda;
@@ -71,12 +76,11 @@ public class Tienda {
 	}
 
 	
+
 	
 	
 	
-	
-	
-	
+
 	public void eliminiarProducto(Producto producto) {
 
 	

@@ -90,8 +90,10 @@ public class Tienda {
 	public void reponerProducto (Producto producto) {
 		
 		if ( listaProductos.size() <5) {
-			
+		for (int i = 0; i < 5; i++) {
 			listaProductos.add(producto);
+		}	
+			
 		}
 		
 	}

@@ -31,10 +31,8 @@ public class Cliente {
 	}
 	
 	public  void comprarProducto(Tienda tienda, Producto producto) {
-		List<Producto> productos = new ArrayList<Producto>();
-		productos.add(producto);
-		
-		compras.put(null, productos);
+		compras.putIfAbsent(tienda, new ArrayList<Producto>());
+		compras.get(tienda).add(producto);
 	}
 	public double gastoTotal() {
 		double gasto = 0;

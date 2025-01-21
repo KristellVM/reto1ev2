@@ -84,7 +84,7 @@ public class Tienda {
 	}
 	
 	
-	public void eliminiarProducto (ArrayList<Producto> productos) {
+	public void (ArrayList<Producto> productos) {
 	
 		ArrayList <Producto> productoDisponible = new ArrayList<>();
 		

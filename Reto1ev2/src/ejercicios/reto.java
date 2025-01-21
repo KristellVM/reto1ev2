@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
+import clases.Cliente;
 import clases.Empleados;
 import clases.Tienda;
 
@@ -27,7 +28,7 @@ public class reto {
 			
 			
 			System.out.println(listaEmpleados);
-			List<Tienda> listaTiendas = generaTienda();
+			List<Tienda> listaTiendas = generaTienda(listaEmpleados);
 		System.out.println(listaTiendas);
 	}
 	//lista de empleados
@@ -55,6 +56,6 @@ public class reto {
 		return listaTiendas;
 	}
 	//1 cliente con datos aleatorios
-	Cliente clien
+	Cliente cliente=new Cliente("nombre");
 	
 }

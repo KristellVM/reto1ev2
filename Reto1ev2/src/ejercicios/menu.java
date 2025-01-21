@@ -12,7 +12,7 @@ public class menu {
 		Scanner sc = new Scanner(System.in);
 		int opcion = 0;
 		do {
-			opcion = Funciones.dimeEntero("Introduce opción\n1.Ver tiendas\n2.Comprar\n3.Mostrar compras\n4.Realizar una queja\n5.Salir", sc);
+			opcion = Funciones.dimeEntero("Introduce opciï¿½n\n1.Ver tiendas\n2.Comprar\n3.Mostrar compras\n4.Realizar una queja\n5.Salir", sc);
 			switch (opcion) {
 			case 1:
 				
@@ -30,7 +30,7 @@ public class menu {
 					
 					break;
 			default:
-				System.out.println("Opción no válida");
+				System.out.println("Opciï¿½n no vï¿½lida");
 				break;
 			}
 		} while (opcion!=5);
@@ -42,5 +42,8 @@ public class menu {
 			
 		}
 	}
+	
+	
+	
 
 }

@@ -3,19 +3,23 @@ package ejercicios;
 import java.util.List;
 import java.util.Scanner;
 
+import clases.Empleados;
 import clases.Tienda;
 import util.Funciones;
+import util.FuncionesK;
 
 public class menu {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int opcion = 0;
+		List<Empleados> listaEmpleados = reto.generaEmpleados();
+		List<Tienda> listaTiendas =  reto.generaTienda(listaEmpleados);
 		do {
 			opcion = Funciones.dimeEntero("Introduce opci�n\n1.Ver tiendas\n2.Comprar\n3.Mostrar compras\n4.Realizar una queja\n5.Salir", sc);
 			switch (opcion) {
 			case 1:
-				
+				FuncionesK.mostrarTiendas(null);
 				break;
 			case 2:
 				
@@ -37,11 +41,6 @@ public class menu {
 
 	}
 	
-	public static void mostrarTiendas(List<Tienda> tiendas) {
-		for (Tienda tienda : tiendas) {
-			
-		}
-	}
 	
 	
 	

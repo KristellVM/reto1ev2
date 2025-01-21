@@ -47,11 +47,11 @@ public class Tienda {
 		this.nombreTienda = nombreTienda;
 	}
 
-	public String getEmpleado() {
+	public Empleados getEmpleado() {
 		return empleado;
 	}
 
-	public void setEmpleado(String empleado) {
+	public void setEmpleado(Empleados empleado) {
 		this.empleado = empleado;
 	}
 
@@ -83,7 +83,7 @@ public class Tienda {
 
 	public void addProducto(Producto productoo) {
 
-		listaProductos.add(productoo);jhj
+		listaProductos.add(productoo);
 
 	}
 
